@@ -23,6 +23,7 @@ public class DrinkImg extends BaseEntity {
 
     private String repimgYn;
 
+    // 다대일 단방향 매핑 (+ 지연로딩 설정)
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "drink_id")
     private Drink drink;

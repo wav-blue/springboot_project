@@ -30,14 +30,14 @@ public class MemberController {
     @PostMapping(value = "/new")
     public String newMember(@Valid MemberFormDto memberFormDto, BindingResult bindingResult, Model model){
 
-        if(bindingResult.hasErrors()){
+        if(bindingResult.hasErrors()){ //유효성검사 결과 X
             return "member/memberForm";
         }
 
         try {
             Member member = Member.createMember(memberFormDto, passwordEncoder);
             memberService.saveMember(member);
-        } catch (IllegalStateException e){
+        } catch (IllegalStateException e){ //중복 회원 가입
             model.addAttribute("errorMessage", e.getMessage());
             return "member/memberForm";
         }

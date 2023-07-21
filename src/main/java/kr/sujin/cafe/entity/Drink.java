@@ -38,14 +38,11 @@ public class Drink extends BaseEntity{
     @Enumerated(EnumType.STRING)
     private DrinkType drinkType; // 메뉴 종류
 
-    //private LocalDateTime regTime; // 등록 시간
-
     public void updateDrink(DrinkFormDto drinkFormDto){
         this.cafeNm = drinkFormDto.getCafeNm();
         this.menuNm = drinkFormDto.getMenuNm();
         this.rating = drinkFormDto.getRating();
         this.drinkDetail = drinkFormDto.getDrinkDetail();
         this.drinkType = drinkFormDto.getDrinkType();
-        //this.regTime = drinkFormDto.getRegTime();
     }
 }

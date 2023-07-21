@@ -76,7 +76,7 @@ public class DrinkService {
 
         return drink.getId();
     }
-    @Transactional(readOnly = true)
+    @Transactional(readOnly = true) // 데이터의 수정이 일어나지 않음 -> 최적화를 위한 어노테이션
     public Page<Drink> getAdminDrinkPage(DrinkSearchDto drinkSearchDto, Pageable pageable){
         return drinkRepository.getAdminDrinkPage(drinkSearchDto, pageable);
     }

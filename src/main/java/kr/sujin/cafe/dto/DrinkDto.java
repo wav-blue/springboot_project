@@ -4,8 +4,6 @@ import kr.sujin.cafe.constant.DrinkType;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
-
 @Getter
 @Setter
 public class DrinkDto {
@@ -21,8 +19,6 @@ public class DrinkDto {
     private String drinkDetail;
 
     private DrinkType drinkType;
-
-    //private LocalDateTime regTime;
 
 }
 

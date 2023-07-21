@@ -32,10 +32,6 @@ public class MainController {
     public String about(Model model){
         return "info/about";
     }
-//    @GetMapping("/upload")
-//    public String upload(Model model) { return "post/upload"; }
-
-    //public String explore(Model model) { return "post/explore"; }
     @GetMapping(value = "/explore")
     public String explore(DrinkSearchDto drinkSearchDto, Optional<Integer> page, Model model){
         Pageable pageable = PageRequest.of(page.isPresent() ? page.get() : 0, 6);

@@ -9,7 +9,6 @@ import lombok.Setter;
 
 import org.modelmapper.ModelMapper;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,8 +26,6 @@ public class DrinkFormDto {
     private String drinkDetail;
 
     private DrinkType drinkType;
-
-    //private LocalDateTime regTime;
 
     //음료를 저장한 후 수정할 때 이미지 정보를 저장하는 리스트
     private List<DrinkImgDto> drinkImgDtoList = new ArrayList<>();
