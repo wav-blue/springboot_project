@@ -31,6 +31,7 @@ Springboot 프레임워크를 통해 진행한 실습입니다.
 - **Member** : 회원
   - **id** / name / email(unique) / password / address / nickname / role
 <br>
+
 ### dto
 - **DrinkFormDto** : 리뷰 데이터 전달
 - **DrinkImgDto** : 이미지 데이터
@@ -38,6 +39,7 @@ Springboot 프레임워크를 통해 진행한 실습입니다.
 - **ExploreDrinkDto** : 탐색 페이지 (검색 X)
 - **MemberFormDto** : 가입 정보
   - 유효값 검증 어노테이션
+<br>
 
 ### Controller
 - **DrinkController**: 등록 및 수정 페이지 접근
@@ -54,6 +56,7 @@ Springboot 프레임워크를 통해 진행한 실습입니다.
   - ```/```: 메인 페이지
   - ```/about```: 소개 페이지로 이동
   - ```/explore```: 검색 페이지로 이동
+<br>
 
 ### Repository
 #### 데이터베이스에 저장<br> JpaRepository 상속
