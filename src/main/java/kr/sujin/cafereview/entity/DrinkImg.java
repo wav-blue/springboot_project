@@ -1,4 +1,4 @@
-package kr.sujin.cafe.entity;
+package kr.sujin.cafereview.entity;
 
 import lombok.Getter;
 import lombok.Setter;

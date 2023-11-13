@@ -1,11 +1,11 @@
-package kr.sujin.cafe.dto;
+package kr.sujin.cafereview.dto;
 
-import kr.sujin.cafe.constant.DrinkType;
+import kr.sujin.cafereview.constant.DrinkType;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
 @Setter
+@Getter
 public class DrinkDto {
 
     private Long id;

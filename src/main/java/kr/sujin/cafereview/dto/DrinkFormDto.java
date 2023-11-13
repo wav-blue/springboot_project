@@ -1,19 +1,20 @@
-package kr.sujin.cafe.dto;
-
-//리뷰 데이터 정보를 전달
-
-import kr.sujin.cafe.constant.DrinkType;
-import kr.sujin.cafe.entity.Drink;
-import lombok.Getter;
-import lombok.Setter;
-
-import org.modelmapper.ModelMapper;
+package kr.sujin.cafereview.dto;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.modelmapper.ModelMapper;
 
-@Getter @Setter
+//리뷰 데이터 정보를 전달
+
+import kr.sujin.cafereview.constant.DrinkType;
+import kr.sujin.cafereview.entity.Drink;
+import lombok.Getter;
+import lombok.Setter;
+
+
+@Setter
+@Getter
 public class DrinkFormDto {
     private Long id;
 

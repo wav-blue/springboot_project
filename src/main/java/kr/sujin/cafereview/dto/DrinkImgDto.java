@@ -1,12 +1,11 @@
-package kr.sujin.cafe.dto;
+package kr.sujin.cafereview.dto;
 
-import kr.sujin.cafe.entity.DrinkImg;
-import lombok.Getter;
-import lombok.Setter;
+import kr.sujin.cafereview.entity.DrinkImg;
+
 import org.modelmapper.ModelMapper;
 
 //음료 이미지에 대한 데이터를 전달
-@Getter @Setter
+
 public class DrinkImgDto {
 
     private static ModelMapper modelMapper = new ModelMapper();

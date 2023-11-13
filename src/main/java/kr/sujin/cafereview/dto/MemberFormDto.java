@@ -1,4 +1,4 @@
-package kr.sujin.cafe.dto;
+package kr.sujin.cafereview.dto;
 
 import lombok.Getter;
 import lombok.Setter;

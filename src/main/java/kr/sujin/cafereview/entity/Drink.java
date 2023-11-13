@@ -1,22 +1,20 @@
-package kr.sujin.cafe.entity;
+package kr.sujin.cafereview.entity;
 
 
-import kr.sujin.cafe.constant.DrinkType;
-import kr.sujin.cafe.dto.DrinkFormDto;
+import javax.persistence.*;
+
+import kr.sujin.cafereview.constant.DrinkType;
+import kr.sujin.cafereview.dto.DrinkFormDto;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import javax.persistence.*;
-import java.time.LocalDateTime;
-
+@Setter
+@Getter
 @Entity
 @Table(name="drink")
-@Getter
-@Setter
 @ToString
 public class Drink extends BaseEntity{
-
     @Id
     @Column(name="drinkId")
     @GeneratedValue(strategy = GenerationType.AUTO)

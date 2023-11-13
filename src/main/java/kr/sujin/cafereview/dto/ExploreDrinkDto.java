@@ -1,7 +1,7 @@
-package kr.sujin.cafe.dto;
+package kr.sujin.cafereview.dto;
 
 import com.querydsl.core.annotations.QueryProjection;
-import kr.sujin.cafe.constant.DrinkType;
+import kr.sujin.cafereview.constant.DrinkType;
 import lombok.Getter;
 import lombok.Setter;
 
